@@ -3,6 +3,6 @@ class Dose < ApplicationRecord
   belongs_to :ingredient
   validates :description, presence: true
   validates :ingredient, uniqueness: { scope: :cocktail,
-    message: "ingredient uniquness par cocktail" }
+    message: "Une seule fois par cocktail" }
 end
 

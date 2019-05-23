@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.container{
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  text-decoration: non;
+  border-radius: 5px;
+}
