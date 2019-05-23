@@ -1,0 +1,5 @@
+class AddColumnAmountToDoses < ActiveRecord::Migration[5.2]
+  def change
+    add_column :doses, :amount, :integer
+  end
+end

@@ -1,0 +1,9 @@
+<%= simple_form_for [cocktail, dose] do |f| %>
+  <%= f.input :description %>
+  <%= f.input :amount %>
+  <%= f.input :ingredient_id %>
+  <%= f.submit "add a dose", class: "btn btn-primary" %>
+
+  <%= link_to "Back to cocktail", cocktail_path(@cocktail), class: "btn btn-secondary" %>
+
+<% end %>
