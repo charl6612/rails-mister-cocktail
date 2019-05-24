@@ -12,9 +12,10 @@
 </head>
 
 <body>
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <a class="navbar-brand" href="/cocktails">
-      <img src="https://www.maliburumdrinks.com/globalassets/images/cocktail-recipe-images/malibu-island-cosmo.png/CocktailHero" />
+
+  
+  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon sticky-top">
+      <a class="navbar-brand" href="/">Home</a>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,14 +24,15 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <%= link_to "Add new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+          <%= link_to "Add new cocktail", new_cocktail_path, class: "btn button" %>
         </li>
       </ul>
     </div>
   </div>
-  <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+
+
     <%= yield %>
-  </div>
+
    <%= javascript_include_tag "application" %>
    <%= javascript_pack_tag "application" %>
   </body> </html>

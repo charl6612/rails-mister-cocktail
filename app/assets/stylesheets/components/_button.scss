@@ -1,0 +1,12 @@
+.button{
+  font-size: 1em;
+  color: black;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  line-height: normal;
+  border: 2px solid black;
+  transition: 0.2s;
+  &:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+}

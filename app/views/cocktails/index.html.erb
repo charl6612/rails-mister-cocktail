@@ -1,11 +1,22 @@
-    <H1>Cocktails</H1>
-
-<div class="cards">
-  <% @cocktails.each do |cocktail| %>
-  <div class="card-category">
-      <%= link_to cocktail_path(cocktail) do %>
-          <%= cocktail.name %>
-    <% end %>
-</div>
-  <% end %>
-</div>
+  
+    <div class="banner" style="background-color: #F4F4F4; background-image: linear-gradient(rgba(255,255,255,0.5),rgba(100,100,100,0.8)), url(<%= image_path "banner_3.jpeg" %>)">
+      <div class="container">
+        <h1>Cocktails </h1>
+        <p>Change your life and create your own cocktails</p>
+        <div>
+          <%= link_to "Add new cocktail", new_cocktail_path, class: "btn button" %>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-5">
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+          <%= link_to cocktail_path(cocktail) do %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+              <%= cocktail.name %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>

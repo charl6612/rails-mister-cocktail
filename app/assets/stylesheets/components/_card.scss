@@ -2,9 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  background-color: #F4F4F4;
+  margin-top: 10px;
+  padding: 8px;
+  a{
+    color:white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
-.card-category{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/1600x900/?cocktail);
+.card-category{;
     background-size: cover;
     background-position: center;
     height: 180px;
@@ -13,10 +21,10 @@
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    a{
-      color:white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-      font-size: 24px;
-      font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    &:hover{
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-decoration: none;
     }
 }
