@@ -13,11 +13,6 @@ Ingredient.destroy_all
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
-
-
-
-url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
-drinks = open(url).read
-
-byebug
-puts test
+Ingredient.create(name: "cramberries")
+Ingredient.create(name: "sugar")
+Ingredient.create(name: "rhum")
