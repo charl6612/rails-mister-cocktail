@@ -42,7 +42,7 @@ gem 'autoprefixer-rails'
 #FRONT
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
-gem 'json', '~> 1.8', '>= 1.8.3'
+gem 'json', '~> 2.3'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'
 gem 'carrierwave'
